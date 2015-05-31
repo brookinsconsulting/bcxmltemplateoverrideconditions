@@ -36,3 +36,9 @@ This solution provides the following ezxmltags template override rule match cond
 * Added by bcxmltemplateoverrideconditions: parent_class_identifier
 
 **Note**: Additional match conditions can be added by patching the kernel override class and documentation. We support with this solution nearly all possible match conditions (minus state and some other more obscure and rarely used conditions).
+
+
+# Origin
+
+Based on a kernel patch created by Brookins Consulting: https://gist.github.com/brookinsconsulting/77df6f70fedf7755628b
+
