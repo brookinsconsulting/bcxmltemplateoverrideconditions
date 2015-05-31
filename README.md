@@ -86,6 +86,8 @@ This solution provides the following kernel class override:
 
 * PHP Class : `eZXMLOutputHandler` - Found by at: `extension/bcxmltemplateoverrideconditions/classes/kerneloverride/kernel/classes/datatypes/ezxmltext/ezxmloutputhandler.php`
 
+**Note**: This solution requires only one legacy kernel class override of a class that is very stable and not subject to much change (if at all) per release (which is important for maintainability). The class has not been modified or [needed a bugfix since late 2012](https://github.com/ezsystems/ezpublish-legacy/commits/master/kernel/classes/datatypes/ezxmltext/ezxmloutputhandler.php).
+
 
 ### Template override rule match conditions added
 
