@@ -1,4 +1,5 @@
 ﻿Copyright © 1999 - 2015 Brookins Consulting (United States of America)
+
 Copyright © 1999 - 2015 eZ Systems AS. All rights reserved.
 
     This file is part of BC XML Template Override Conditions.
