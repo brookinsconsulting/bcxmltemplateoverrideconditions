@@ -1,0 +1,29 @@
+{
+    "name": "brookinsconsulting/bcxmltemplateoverrideconditions",
+    "description": "eZ Publish Legacy kernel override class extension which provides a stable and flexible solution which adds manny more template override.ini match conditions (than supported by default) for ezxml output tag template overrides. Provides for greater template override control!",
+    "type": "ezpublish-legacy-extension",
+    "keywords": [ "eZ Publish", "ezxml", "template", "override", "conditions" ],
+    "homepage": "https://github.com/brookinsconsulting/bcxmltemplateoverrideconditions",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name" : "Brookins Consulting",
+            "homepage": "http://brookinsconsulting.com",
+            "email": "info@brookinsconsulting.com",
+            "role": "Developer"
+        },
+        {
+            "name" : "eZ Systems",
+            "homepage": "http://ez.no",
+            "role": "Original Author"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.0.0",
+        "ezsystems/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "bcxmltemplateoverrideconditions"
+    }
+}

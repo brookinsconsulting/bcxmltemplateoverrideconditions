@@ -1,0 +1,26 @@
+--- /Users/graham/web/ez/dual-static-based-off-2014.11.1/ezpublish_legacy/kernel/classes/datatypes/ezxmltext/ezxmloutputhandler.php	2015-05-31 07:02:38.000000000 -0500
++++ /Users/graham/web/ez/dual-static-based-off-2014.11.1/ezpublish_legacy/kernel/classes/datatypes/ezxmltext/ezxmloutputhandler.php.solution.003.works	2015-05-31 06:59:53.000000000 -0500
+@@ -162,7 +162,22 @@
+         $this->Res = eZTemplateDesignResource::instance();
+         if ( $this->ContentObjectAttribute )
+         {
+-            $this->Res->setKeys( array( array( 'attribute_identifier', $this->ContentObjectAttribute->attribute( 'contentclass_attribute_identifier' ) ) ) );
++            $this->Res->setKeys( array(
++                                 array( 'attribute_identifier', $this->ContentObjectAttribute->attribute( 'contentclass_attribute_identifier' ) ),
++                                 array( 'object', $this->ContentObjectAttribute->attribute( 'contentobject_id' ) ),
++                                 array( 'class', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'contentclass_id' ) ),
++                                 array( 'class_identifier', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'class_identifier' ) ),
++                                 array( 'remote_id', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'remote_id' ) ),
++                                 array( 'node', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'node_id' ) ),
++                                 array( 'node_remote_id', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'remote_id' ) ),
++                                 array( 'depth', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'depth' ) ),
++                                 array( 'url_alias', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'url_alias' ) ),
++                                 array( 'parent_node', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'parent_node_id' ) ),
++                                 array( 'parent_node_remote_id', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'parent' )->attribute( 'remote_id' ) ),
++                                 array( 'parent_object_remote_id', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'parent' )->attribute( 'object' )->attribute( 'remote_id' ) ),
++                                 array( 'parent_class', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'parent' )->attribute( 'object' )->attribute( 'class' ) ),
++                                 array( 'parent_class_identifier', $this->ContentObjectAttribute->attribute( 'object' )->attribute( 'main_node' )->attribute( 'parent' )->attribute( 'object' )->attribute( 'class_identifier' ) )
++                                ) );
+         }
+ 
+         $this->Document = new DOMDocument( '1.0', 'utf-8' );
