@@ -128,7 +128,7 @@ Run the following command from your project root to install the extension:
 
 ### Extension Activation
 
-Kernel class override extensions are **not** activated via ini setttings. Normal site.ini extension activation settings are not required to use this extension and it's solution.
+Kernel class override extensions are **not** activated via ini settings. Normal site.ini extension activation settings are not required to use this extension and it's solution.
 
 
 ### Enable eZ Publish Kernel Overrides
